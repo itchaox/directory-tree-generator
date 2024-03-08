@@ -3,19 +3,18 @@
  * @Author     : wangchao
  * @Date       : 2024-03-06 15:12
  * @LastAuthor : wangchao
- * @LastTime   : 2024-03-08 15:53
+ * @LastTime   : 2024-03-08 16:10
  * @desc       : 主页面
  */
 
-import { Button, Rate } from "antd";
+import Upload from "./components/upload.client";
 
 export default function App() {
   return (
     <div>
-      <h1>Test App</h1>
+      <h1 className="flex justify-center text-4xl my-5">目录树生成器</h1>
       <div className="App">
-        <Button type="primary">Button</Button>
-        <Rate />
+        <Upload />
       </div>
     </div>
   );
