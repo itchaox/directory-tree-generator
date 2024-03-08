@@ -3,15 +3,15 @@
  * @Author     : wangchao
  * @Date       : 2024-03-06 15:12
  * @LastAuthor : wangchao
- * @LastTime   : 2024-03-06 17:02
+ * @LastTime   : 2024-03-08 15:47
  * @desc       : 
  */
 
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
+import { AntdRegistry } from '@ant-design/nextjs-registry';
 
-const inter = Inter({ subsets: ["latin"] });
+
 
 export const metadata: Metadata = {
   title: "目录树生成器",
@@ -25,9 +25,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        {children}
-        <h1>Test 布局！！！</h1>
+      <body >
+        {/* {children} */}
+        <AntdRegistry>{children}</AntdRegistry>
         </body>
     </html>
   );
